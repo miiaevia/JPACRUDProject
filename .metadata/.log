@@ -87,3 +87,6 @@ Java Model Exception: Java Model Status [Cannot nest 'JPACRUDApp/src/main/java' 
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 !SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-04-19 16:22:44.734
 !MESSAGE Cannot nest 'JPACRUDApp/src/main/java' inside 'JPACRUDApp/src'. To enable the nesting exclude 'main/' from 'JPACRUDApp/src'
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-04-19 16:55:23.673
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
