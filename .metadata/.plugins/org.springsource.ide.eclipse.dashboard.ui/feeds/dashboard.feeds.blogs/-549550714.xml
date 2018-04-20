@@ -5,7 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-04-19T17:54:20Z</updated>
+  <updated>2018-04-19T17:54:00Z</updated>
   <entry>
     <title>Kafka Streams and Spring Cloud Stream</title>
     <link rel="alternate" href="https://spring.io/blog/2018/04/19/kafka-streams-and-spring-cloud-stream" />
@@ -14,7 +14,7 @@
       <name>Soby Chacko</name>
     </author>
     <id>tag:spring.io,2018-04-12:3249</id>
-    <updated>2018-04-19T17:54:20Z</updated>
+    <updated>2018-04-19T17:54:00Z</updated>
     <content type="html">&lt;div class="paragraph"&gt;
 &lt;p&gt;On the heels of the recently announced Spring Cloud Stream &lt;a href="https://spring.io/blog/2018/04/10/announcing-general-availability-of-spring-cloud-stream-elmhurst-release-2-0-0-release"&gt;Elmhurst.RELEASE&lt;/a&gt;, we are pleased to present another blog installment dedicated to Spring Cloud Stream&amp;#8217;s native integration with the Apache Kafka Streams library. Let’s review the new improvements.&lt;/p&gt;
 &lt;/div&gt;
@@ -76,7 +76,7 @@ public static class WordCountProcessorApplication {
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;@EnableBinding&lt;/code&gt; and &lt;code&gt;@KafkaStreamsProcessor&lt;/code&gt; annotations convey the framework to perform binding on Kafka Streams targets. You can have your own interfaces with multiple “input” and “output” bindings, too.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@EnableBinding&lt;/code&gt; annotation with &lt;code&gt;KafkaStreamsProcessor&lt;/code&gt; convey the framework to perform binding on Kafka Streams targets. You can have your own interfaces with multiple “input” and “output” bindings, too.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;@StreamListener&lt;/code&gt; instructs the framework to allow the application to consume events as &lt;code&gt;KStream&lt;/code&gt; from a topic that is bound on the "input" target.&lt;/p&gt;
