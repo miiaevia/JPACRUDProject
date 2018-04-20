@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Leaders {
+public class Leader {
 	
 	//fields
 	@Id
@@ -23,7 +23,7 @@ public class Leaders {
 	private int active;
 	
 	//no-arg
-	public Leaders() {	}
+	public Leader() {	}
 
 	//getters/setters
 	public String getTitle() {

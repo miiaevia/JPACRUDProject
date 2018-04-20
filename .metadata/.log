@@ -1577,3 +1577,21 @@ java.lang.IllegalArgumentException
 
 !ENTRY net.resheim.eclipse.launcher.core 1 0 2018-04-20 14:17:59.681
 !MESSAGE Launching new Eclipse instance with "open -n /Applications/STS.app --args -vm /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/../jre/lib/server/libjvm.dylib -os macosx -ws cocoa -arch x86_64 -showsplash -launcher /Applications/STS.app/Contents/MacOS/STS -name STS --launcher.library /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.551.v20171108-1834/eclipse_1630.so -startup /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar --launcher.overrideVmargs -product org.springsource.sts.ide -keyring /Users/megan/.eclipse_keyring -data /Users/megan/SD/Java/VideoStore -vmargs -Dosgi.requiredJavaVersion=1.8 -Xms40m -Dosgi.module.lock.timeout=10 -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns -Xmx1200m -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar "
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-20 15:52:18.434
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-20 15:52:18.435
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-04-20 15:58:31.848
+!MESSAGE Server Tomcat v8.5 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-04-20 15:58:59.899
+!MESSAGE Server Tomcat v8.5 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-20 16:39:49.927
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-20 16:39:49.928
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

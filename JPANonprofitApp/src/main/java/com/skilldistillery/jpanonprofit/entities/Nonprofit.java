@@ -19,19 +19,19 @@ public class Nonprofit {
 	private String description;
 	private String cause;
 	@Column(name = "year_founded")
-	private int yearFounded;
+	private Integer yearFounded;
 	@Column(name = "address_id")
-	private int addressId; 
+	private Integer addressId; 
 	@Column(name = "image_url")
 	private String imageURL;
 	@Column(name = "contact_id")
-	private int contactId;
+	private Integer contactId;
 	@Column(name = "president_id")
-	private int presidentId;
+	private Integer presidentId;
 	@Column(name = "founder_id")
-	private int founderId;
+	private Integer founderId;
 	@Column(name = "co_founder_id")
-	private int cofounderId;
+	private Integer cofounderId;
 	
 	//no-arg constructor
 	public Nonprofit() {	}
