@@ -69,19 +69,19 @@ public class Nonprofit {
 		this.cause = cause;
 	}
 
-	public int getYearFounded() {
+	public Integer getYearFounded() {
 		return yearFounded;
 	}
 
-	public void setYearFounded(int yearFounded) {
+	public void setYearFounded(Integer yearFounded) {
 		this.yearFounded = yearFounded;
 	}
 
-	public int getAddressId() {
+	public Integer getAddressId() {
 		return addressId;
 	}
 
-	public void setAddressId(int addressId) {
+	public void setAddressId(Integer addressId) {
 		this.addressId = addressId;
 	}
 
@@ -93,35 +93,35 @@ public class Nonprofit {
 		this.imageURL = imageURL;
 	}
 
-	public int getContactId() {
+	public Integer getContactId() {
 		return contactId;
 	}
 
-	public void setContactId(int contactId) {
+	public void setContactId(Integer contactId) {
 		this.contactId = contactId;
 	}
 
-	public int getPresidentId() {
+	public Integer getPresidentId() {
 		return presidentId;
 	}
 
-	public void setPresidentId(int presidentId) {
+	public void setPresidentId(Integer presidentId) {
 		this.presidentId = presidentId;
 	}
 
-	public int getFounderId() {
+	public Integer getFounderId() {
 		return founderId;
 	}
 
-	public void setFounderId(int founderId) {
+	public void setFounderId(Integer founderId) {
 		this.founderId = founderId;
 	}
 
-	public int getCofounderId() {
+	public Integer getCofounderId() {
 		return cofounderId;
 	}
 
-	public void setCofounderId(int cofounderId) {
+	public void setCofounderId(Integer cofounderId) {
 		this.cofounderId = cofounderId;
 	}
 

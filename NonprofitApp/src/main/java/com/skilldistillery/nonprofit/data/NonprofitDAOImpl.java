@@ -32,8 +32,7 @@ public class NonprofitDAOImpl implements NonprofitDAO {
 	@Override
 	public List<Nonprofit> retrieveAll() {
 		String query = "SELECT np FROM Nonprofit np";
-		List<Nonprofit> nonprofits = em.createQuery(query, Nonprofit.class)
-										.getResultList();
+		List<Nonprofit> nonprofits = em.createQuery(query, Nonprofit.class).getResultList();
 		return nonprofits;
 	}
 
@@ -53,17 +52,18 @@ public class NonprofitDAOImpl implements NonprofitDAO {
 	@Override
 	public boolean delete(Nonprofit np) {
 		int id = np.getId();
-		Nonprofit dbNP = em.find(Nonprofit.class, id); 
+		System.out.println(id);
+		Nonprofit dbNP = em.find(Nonprofit.class, id);
 		boolean deletedNonprofit = false;
-		if (dbNP != null) {
-			try {
-				em.remove(dbNP);
-				deletedNonprofit = true;
-			}
-			catch(IllegalArgumentException iae) {
-				deletedNonprofit = false;
-			}
+
+		try {
+			em.remove(dbNP);
+			em.flush();
+			deletedNonprofit = true;
+		} catch (IllegalArgumentException iae) {
+			deletedNonprofit = false;
 		}
+
 		return deletedNonprofit;
 	}
 }

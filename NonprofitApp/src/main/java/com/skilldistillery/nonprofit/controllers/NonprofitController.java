@@ -19,7 +19,7 @@ public class NonprofitController {
 	
 	@RequestMapping(path="index.do", method=RequestMethod.GET)
 	public ModelAndView index() {
-		System.out.println("***********************");
+//		System.out.println("***********************");
 		ModelAndView mv = new ModelAndView(); 
 		List<Nonprofit> nonprofits = dao.retrieveAll();
 		mv.addObject("nonprofits", nonprofits);
@@ -52,12 +52,10 @@ public class NonprofitController {
 		mv.setViewName("WEB-INF/views/addNonprofit.jsp");
 		return mv;
 	}
-	@RequestMapping(path = "addAProf.do", method=RequestMethod.POST)
+	@RequestMapping(path = "addNonprofit.do", method=RequestMethod.POST)
 	public ModelAndView addNonprofitPost(Nonprofit newNP) {
 		ModelAndView mv = new ModelAndView();
 		Nonprofit np = dao.create(newNP);
-		System.out.println(np);
-		System.out.println("***********JAKE*************");
 		if (np != null) {
 			mv.addObject(np);
 			mv.addObject("nonprofit", np);
@@ -67,6 +65,23 @@ public class NonprofitController {
 			String message = "Unable to add Non-Profit";
 			mv.addObject(message);
 			mv.setViewName("WEB-INF/views/index.jsp");
+		}
+		return mv;
+	}
+	
+	@RequestMapping(path = "deleteNonprofit.do", method=RequestMethod.POST)
+	public ModelAndView deleteNonprofit(@RequestParam(name="id") int id) {
+//		System.out.println("me");
+		Nonprofit np = dao.retrieveById(id);
+		ModelAndView mv = new ModelAndView(); 
+		if (dao.delete(np)) {
+			List<Nonprofit> nonprofits = dao.retrieveAll();
+			mv.addObject("nonprofits", nonprofits);
+			mv.setViewName("WEB-INF/views/index.jsp");
+			
+		}
+		else {
+			mv.setViewName("WEB-INF/views/nonprofit.jsp");
 		}
 		return mv;
 	}

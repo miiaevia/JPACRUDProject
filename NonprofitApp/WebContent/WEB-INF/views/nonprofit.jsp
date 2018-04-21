@@ -7,6 +7,11 @@
 <title>Non-Profit</title>
 </head>
 <body>
+<h2>Non-Profit</h2>
+	<form action="deleteNonprofit.do" method="POST">
+	<input type="hidden" value="${nonprofit.id }" name="id">
+    <button type="submit" name="deleteNonprofit" value="deleteNonprofit">Delete Non-Profit</button>
+</form>
 	<h4>${nonprofit.name} <p>${nonprofit.abbr}</p></h4>
 	<p>Founded: ${nonprofit.yearFounded }</p>
 	<p>${nonprofit.description }</p>

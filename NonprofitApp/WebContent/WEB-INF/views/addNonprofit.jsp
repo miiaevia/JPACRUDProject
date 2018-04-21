@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-	<form action="addAProf.do" method="POST">
+	<form action="addNonprofit.do" method="POST">
 		<label for="abbr">Abbreviation</label>
 		<input type="text" name="abbr"> <br>
 		
