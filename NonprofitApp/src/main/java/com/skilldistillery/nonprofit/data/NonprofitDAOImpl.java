@@ -18,8 +18,10 @@ public class NonprofitDAOImpl implements NonprofitDAO {
 
 	@Override
 	public Nonprofit create(Nonprofit np) {
+		System.out.println("#2" + np);
 		em.persist(np);
 		em.flush();
+		System.out.println("#3" + np);
 		return np;
 	}
 
@@ -52,7 +54,7 @@ public class NonprofitDAOImpl implements NonprofitDAO {
 	@Override
 	public boolean delete(Nonprofit np) {
 		int id = np.getId();
-		System.out.println(id);
+//		System.out.println(id);
 		Nonprofit dbNP = em.find(Nonprofit.class, id);
 		boolean deletedNonprofit = false;
 
