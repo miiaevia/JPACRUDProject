@@ -9,7 +9,12 @@
 </head>
 <body>
 	<h1>Non-Profit List</h1>
+	<!-- <p>${message }</p> (unable to add non profit message)-->
 	<!-- Put ADD Nonprofit button here -->
+	<form action="addNonprofit.do" method="GET">
+    <button type="submit" name="addNonprofit" value="addNonprofit">Add Non-Profit</button>
+</form>
+	<!-- This is to show list of Nonprofits -->
 	<form action="index.do" method="GET">
 		<c:choose>
 			<c:when test="${! empty nonprofits}">
