@@ -12,6 +12,9 @@
 	<input type="hidden" value="${nonprofit.id }" name="id">
     <button type="submit" name="deleteNonprofit" value="deleteNonprofit">Delete Non-Profit</button>
 </form>
+<form action="index.do" method="GET">
+    <button type="submit" name="index.do" value="index.do">Return Home</button>
+</form>
 	<h4>${nonprofit.name} <p>${nonprofit.abbr}</p></h4>
 	<p>Founded: ${nonprofit.yearFounded }</p>
 	<p>${nonprofit.description }</p>
