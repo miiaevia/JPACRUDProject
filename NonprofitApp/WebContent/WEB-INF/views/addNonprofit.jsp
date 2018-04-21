@@ -29,6 +29,7 @@
 		
 		<label for="yearFounded">Year Founded</label>
 		<input type="number" step="1" max="2018" name="yearFounded"> <br>
+	<input type="hidden" value="${nonprofit.id }" name="id">	
 	<input type="submit" value="Add Non-Profit">
 	</form>
 	

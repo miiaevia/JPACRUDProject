@@ -37,13 +37,22 @@ public class NonprofitController {
 		return mv;
 	}
 	
-	@RequestMapping(path = "updateNonprofit.do", method=RequestMethod.POST)
-	public ModelAndView updateNonprofit(@RequestParam(name="npid") Integer npId) {
+	@RequestMapping(path= "updateNonprofit.do", method=RequestMethod.GET)
+	public ModelAndView updateNpView(@RequestParam(name="id") Integer id) {
 		ModelAndView mv = new ModelAndView();
-		Nonprofit np = dao.retrieveById(npId);
+		Nonprofit np = dao.retrieveById(id);
+		mv.addObject("nonprofit", np);  
+		mv.setViewName("WEB-INF/views/updateNonprofitForm.jsp");
+		return mv;
+	}
+	
+	@RequestMapping(path = "updateNonprofit.do", method=RequestMethod.POST)
+	public ModelAndView updateNonprofit(@RequestParam(name="id") Integer id, Nonprofit updatedNp) {
+		ModelAndView mv = new ModelAndView();
+		Nonprofit np = dao.update(id, updatedNp);
 		// call updateNonprofit method here and add MANAGED np, not np
 		mv.addObject("nonprofit", np);
-		mv.setViewName("WEB-INF/views/updateNonprofitForm.jsp");
+		mv.setViewName("WEB-INF/views/nonprofit.jsp");
 		return mv;
 	}
 	@RequestMapping(path = "addNonprofit.do", method=RequestMethod.GET)

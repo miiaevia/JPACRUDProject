@@ -12,6 +12,10 @@
 	<input type="hidden" value="${nonprofit.id }" name="id">
     <button type="submit" name="deleteNonprofit" value="deleteNonprofit">Delete Non-Profit</button>
 </form>
+	<form action="updateNonprofit.do" method="GET">
+	<input type="hidden" value="${nonprofit.id }" name="id">
+    <button type="submit" name="updateNonprofit" value="updateNonprofit">Update Non-Profit</button>
+</form>
 <form action="index.do" method="GET">
     <button type="submit" name="index.do" value="index.do">Return Home</button>
 </form>
